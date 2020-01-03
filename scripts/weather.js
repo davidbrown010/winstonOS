@@ -3,7 +3,7 @@ var conditions = ["Clear", "Partly Cloudy", "Cloudy", "Dust", "Fog", "Haze", "Sc
 
 //currentweather Module ----------------------------------------------------------------------------------------------------------------
 function getCurrentWeather(){
-	var apiCallCur ="http://api.openweathermap.org/data/2.5/weather?zip=61761,us&appid=730068d097f913051348d4d637f8e527";
+	var apiCallCur ="https://api.openweathermap.org/data/2.5/weather?zip=61761,us&appid=730068d097f913051348d4d637f8e527";
 	$.getJSON(apiCallCur, weatherCallback);
 	var conditionWord="";
 }
@@ -133,7 +133,7 @@ function replaceWeatherImage(word){
 
 //forecast module ----------------------------------------------------------------------------------------------------------------------
 function getForecast(){
-	var apiCallFore ="http://api.openweathermap.org/data/2.5/forecast?zip=61761,us&appid=730068d097f913051348d4d637f8e527";
+	var apiCallFore ="https://api.openweathermap.org/data/2.5/forecast?zip=61761,us&appid=730068d097f913051348d4d637f8e527";
 	$.getJSON(apiCallFore, forecastCallback);
 }
 
