@@ -95,11 +95,18 @@ function replaceWeatherCondition(word){
 function replaceWeatherImage(word){
 	var returnImage = replaceWeatherCondition(word);
 	//checks to see if word is in conditions array, if not, icon is set to clear
+	var match = false;
 	for (var a = 0; a < conditions.length; a++)
 	{
-		if (!(conditions[a] === returnImage))
-			returnImage="Clear";
+		if (returnImage === conditions[a])
+		{
+			match = true;
+		}
 	}
+	if (match == false){
+		returnImage = "Clear";
+	}
+
 
 	//for moon vs sun img
 	var time = new Date();

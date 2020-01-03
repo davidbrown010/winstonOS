@@ -32,11 +32,11 @@
 	margin: 2vw 0;
 }
 .forecastDisplay{
-	margin-top:.5vw;
-	margin-left:-.7vw;
+	margin:.5vw auto 0 auto;
+	right:0;
+	left:0;
 	text-align:center;
 	height:19vw;
-	transform:scale(.95);
 }
 .dailyWeather{
 	font-size:2.2vw;
