@@ -1,0 +1,56 @@
+/*Wether and Forecast Widgets*/
+.weatherLogoIcon{
+	width:2.7vw;
+	border-radius:30%;
+	margin-right:.5vw;
+	vertical-align:middle;
+}
+#weatherContent{
+	margin-top:.5vw;
+}
+#weatherContent h3{
+	font-size:8vw;
+	font-style: bold;
+}
+#weatherContent h1{
+	font-size:3vw;
+	font-style:normal;
+	margin-bottom:.5vw;
+}
+#weatherContent p{
+	font-size:2vw;
+	font-weight:bold;
+}
+.weatherIcon{
+	width:auto;
+	height:4vw;
+}
+.forecastIcon{
+	width:auto;
+	height:6vw;
+	text-align:center;
+	margin: 2vw 0;
+}
+.forecastDisplay{
+	margin-top:.5vw;
+	margin-left:-.7vw;
+	text-align:center;
+	height:19vw;
+	transform:scale(.95);
+}
+.dailyWeather{
+	font-size:2.2vw;
+	margin:0 1.8vw;
+	font-weight:bold;
+}
+.dailyWeather p{
+	
+}
+.dailyWeather h3{
+
+}
+
+/*bg gradient wipes*/
+.sunnyBG{
+	background:linear-gradient(0deg,rgba(0, 70, 100, 1), rgba(0, 20, 65, 1));
+}

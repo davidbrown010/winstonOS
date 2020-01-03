@@ -1,0 +1,98 @@
+/*Music widget-----------------------------------------*/
+#spotifyIcon{
+	width:3vw;
+	border-radius:30%;
+	margin-right:.5vw;
+	vertical-align:middle;
+}
+
+
+#progressWrapper{
+	height:1vw;
+}
+#progressContainer{
+	height:1vw;
+	position:relative;
+}
+#centeredBar{
+	width:88%;
+	height:1vw;
+	margin:.5vw auto;
+}
+#progressSpacer{
+	height:.325vw;
+}
+#progressMax{
+	background-color:rgb(150,150,150);
+	margin:0 auto;
+	border-radius:200px;
+}
+#progressBar{
+	height:.45vw;
+	width:50%;
+	border-radius:200px;
+}
+#circleMarker{
+	width:1vw;
+	height:1vw;
+	border-radius:50%;
+	left:49%;
+	bottom:0;
+	position:absolute;
+}
+#musicTimeContainer{
+	margin-bottom:1.5vw;
+}
+.musicTime{
+	margin:0 2vw;
+	font-size:1.4vw;
+}
+#startTime{
+	position:absolute;
+	left:0;
+}
+#endTime{
+	position:absolute;
+	right:0;
+}
+
+
+
+#musicContent{
+	margin-top:5vw;
+	margin-bottom:2vw;
+}
+#musicContent h4{
+	text-align:center;
+	font-weight:bold;
+	font-size:3vw;
+}
+#musicContent p{
+	text-align:center;
+	font-weight:normal;
+	font-size:2vw;
+}
+
+#playerControl{
+	vertical-align:center;
+}
+#backTrack{
+	width:3vw;
+	height:3vw;
+	padding:1vw;
+	transform:rotateZ(180deg);
+	filter:invert(100%);
+}
+#playOrPause{
+	width:4vw;
+	height:4vw;
+	padding:1vw;
+	margin:0 1vw;
+	filter:invert(100%);
+}
+#skipTrack{
+	width:3vw;
+	height:3vw;
+	padding:1vw;
+	filter:invert(100%);
+}

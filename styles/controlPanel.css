@@ -1,0 +1,48 @@
+/*control panel */
+#controlPanel{
+	position:sticky;
+	bottom:3vw;
+	height:5vw;
+	display:grid;
+	grid-template-rows: [widget] 1fr;
+	grid-template-columns: [widget1] 1fr [widget2] 1fr [widget3] 1fr [widget4] 1fr;
+}
+#controlPanel button{
+	border-radius:50%;
+	border: 0px solid;
+	width:6vw;
+	height:6vw;
+	outline:none;
+	color: rgba(0,0,0,0);
+	filter:drop-shadow(.1vw .1vw 8px rgba(0,0,0,.3));
+}
+#widget1{
+	grid-column-start: widget1;
+	grid-row-start: widget;
+	margin:auto;
+
+}
+#widget2{
+	grid-column-start: widget2;
+	grid-row-start: widget;
+	margin:auto;
+}
+#widget3{
+	grid-column-start: widget3;
+	grid-row-start: widget;
+	margin:auto;
+}
+#widget4{
+	grid-column-start: widget4;
+	grid-row-start: widget;
+	margin:auto;
+}
+#lightDarkMode{
+	background-image: url('control panel icons/live photo.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+#sleepMode{
+	
+}

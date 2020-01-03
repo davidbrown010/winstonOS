@@ -1,0 +1,42 @@
+/*Apple Calender Colors*/
+.clearEventRed{
+	background-color:rgba(170,0,30,.5);
+}
+.eventRed{
+	background-color:rgb(230,0,60);
+}
+
+.clearEventOrange{
+	background-color:rgba(170,110,0,.5);
+}
+.eventOrange{
+	background-color:rgb(230,170,0);
+}
+
+.clearEventYellow{
+	background-color:rgba(170,160,0,.5);
+}
+.eventYellow{
+	background-color:rgb(230,210,0);
+}
+
+.clearEventGreen{
+	background-color:rgba(60,170,60,.5);
+}
+.eventGreen{
+	background-color:rgb(115,230,69);
+}
+
+.clearEventBlue{
+	background-color:rgba(0,130,170,.5);
+}
+.eventBlue{
+	background-color:rgb(0,175,255);
+}
+
+.clearEventPurple{
+	background-color:rgba(170,0,150,.5);
+}
+.eventPurple{
+	background-color:rgb(230,100,200);
+}

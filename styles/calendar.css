@@ -1,0 +1,64 @@
+/*main container*/
+#calendarContainer{
+	text-align:left;
+	margin-top:1.5vw;
+	margin-left:1.25vw;
+	width:20vw;
+}
+
+
+/*individual events---------------------------------------------------*/
+.calContainer{
+	display:grid;
+	grid-template-columns:[vline] 1fr [event] 20fr;
+	top:15%;
+
+	border-radius:1.5vw;
+	padding:1vw;
+}
+.calLine{
+	width:.65vw;
+	border-radius:10vw;
+	grid-column-start:vline;
+	margin-right:1vw;
+}
+.calTextContainer{
+	grid-column-start:event;
+}
+.calTextContainer h3{
+	font-weight:bold;
+	font-size:3.5vw;
+	margin-bottom:1.5vw;
+}
+.calTextContainer h5{
+	font-size:2vw;
+	font-weight:bold;
+}
+.calTextContainer p{
+	font-size:2vw;
+	font-weight:bold;
+}
+
+
+.calendarIcon{
+	width:2.7vw;
+	height:2.7vw;
+	border-radius:30%;
+	margin-right:.5vw;
+	text-align:center;
+	vertical-align:middle;
+	background-color:rgb(230,230,230);
+	display:inline-block;
+}
+.calendarIcon p{
+	padding-top:.29vw;
+	color:red;
+	font-weight:bold;
+	font-size:.8vw;
+}
+.calendarIcon h3{
+	margin-top:-.17vw;
+	color:black;
+	font-size:1.5vw;
+	font-weight:bolder;
+}

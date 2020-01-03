@@ -1,0 +1,75 @@
+body{
+	font-family:Arial;
+}
+#header{
+	isolation: isolate;
+}
+#head{
+	color:white;
+	font-size:2vw;
+	text-align:center;
+	/*filter:drop-shadow(0 0 2vw rgba(255,255,255,1));*/
+	font-weight:bold;
+	display: block;
+	margin-top:-2.8em;
+	opacity:.9;
+	mix-blend-mode: difference;
+}
+
+#topClockText{
+	text-align:center;
+	color:rgb(50,50,50);
+	font-size:8vw;
+	font-weight:bold;
+	display: block;
+}
+
+#clockContainer{
+	width:80vw;
+	position:fixed;
+	top:30vw;
+	right:0;
+	left:0;
+	margin:0 auto;
+
+}
+td,th{
+	font-size:6vw;
+	font-weight:normal;
+	text-align:center;
+}
+.active{
+	color:white;
+	filter:drop-shadow(0 0 2vw rgba(255,255,255,.4));
+}
+.unactive{
+	color:rgb(50,50,50);
+	filter:drop-shadow(0 0 0 rgba(255,255,255,0));
+}
+
+.fadeIn{
+	opacity:1;
+	transition: opacity 1s ease .25s;
+}
+.hidden{
+	opacity:0;
+	transition: opacity 1s ease;
+}
+.scaleUp{
+	transform:scale(120);
+	transition: transform .5s ease-in;
+}
+.scaleDown{
+	transform: scale(1);
+	transition: transform .5s ease;
+}
+.hide{
+	transform:scaleX(0);
+}
+.unhide{
+	transform:scaleX(1);
+}
+.restoreScaleUp{
+	transform:scaleX(1);
+	transform:scale(120);
+}

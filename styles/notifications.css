@@ -1,0 +1,38 @@
+/*Notification Center*/
+#notifications h1{
+	font-size:3vw;
+	font-weight:normal;
+	padding-left:1vw;
+}
+#notifications p{
+	font-size:2.5vw;
+}
+.notificationCenter{
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "noti1" "noti2" "noti3" "noti4";
+}
+.notificationItem{
+	border-radius:1.65vw;
+	height:5.5vw;
+	margin:.75vw 0;
+}
+.notificationItem h3{
+	padding: 1.25vw 0 0 .8vw;
+	font-size:2.5vw;
+	font-weight:normal;
+	font-style:normal;
+}
+#noti1{
+	grid-area:noti1;
+}
+#noti2{
+	grid-area:noti2;
+}
+#noti3{
+	grid-area:noti3;
+}
+#noti4{
+	grid-area:noti4;
+}

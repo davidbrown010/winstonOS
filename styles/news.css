@@ -1,0 +1,36 @@
+#newsIcon{
+	width:2.5vw;
+	height:2.52vw;
+	border-radius:30%;
+	margin-right:.5vw;
+	vertical-align:middle;
+}
+#newsCont2{
+	position:relative;
+	height:25vw;
+}
+#newsContainer{
+	display:grid;
+	grid-template-columns:[vline] 2% [event] 98%;
+	margin-left:1vw;
+	position:absolute;
+	bottom:0%;
+	text-align:left;
+}
+#newsLine{
+	width:.75vw;
+	height:auto;
+	border-radius:100px;
+	grid-column-start:vline;
+	background-color:rgb(230,230,230);
+}
+#newsTextContainer{
+	grid-column-start:event;
+}
+#newsTextContainer h4{
+	font-family: serif;
+	font-size:4.5vw;
+}
+#newsTextContainer p{
+	font-size:2vw;
+}

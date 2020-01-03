@@ -1,0 +1,168 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	font-style:normal;
+	color:rgb(230,230,230);
+}
+body{
+	background-color:black;
+}
+header{
+	padding-top:1vh;
+	text-align:center;
+	font-size:2vw;
+	font-weight:bold;
+}
+
+/*Lightmode/darkmode widgets------------------------------*/
+h1{
+	color:rgb(230,230,230);
+	filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.2));
+}
+h2{
+	color:rgb(190, 190, 190);
+	filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.2));
+}
+
+p{
+	color:rgb(180,180,180);
+	filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.2));
+}
+
+h4{
+	color:rgb(230,230,230);
+	filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.2));
+	vertical-align:middle;
+}
+
+
+/*formatting the grid system-----------------------------*/
+.mainInterface{
+	margin:0 auto;
+	padding-top:4vw;
+	text-align:center;
+	width: 82vw;
+}
+
+.grid-container{
+	display:grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows:30vw 30vw 30vw 30vw;
+	grid-template-areas:
+	"currentWeather date upNext"
+	"forecast forecast tasks"
+	"music bible tasks"
+	"news news news";
+	margin:0 auto;
+}
+.grid-item{
+	border-radius:1.4vw;
+	margin:2vw;
+	background-color:rgb(150,150,150);
+	/*filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.3));*/
+}
+/*Module styling-----------------------------------------*/
+#dateHeader{
+	grid-area: date;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/dateBGs/seirra.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#notifications{
+	grid-area: notifications;
+	text-align:left;
+	background-color:rgba(0,0,0,0);
+}
+#currentWeather{
+	grid-area: currentWeather;
+	background:linear-gradient(0deg,rgba(0, 70, 100, 1), rgba(0, 20, 65, 1));
+}
+#forecast{
+	grid-area: forecast;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/forecastBGs/fall.jpeg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#upNext{
+	grid-area: upNext;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/gradients/Blue Purple Fluid.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#music{
+	grid-area: music;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/sample album covers/Astro World.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#tasks
+{
+	grid-area: tasks;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/gradients/Red Purple 3d waves.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#bible{
+	grid-area: bible;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/bibleBG.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+}
+#news{
+	grid-area: news;
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/newsSampleBG.jpg");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
+	
+}
+
+/*for widget headers---------------------------*/
+.grid-item h2{
+	font-weight:normal;
+	font-size: 2.5vw;
+	padding:1.5vw 0 0 1.5vw;
+	text-align:left;
+}
+
+
+/*date widget*/
+#settingsLogo{
+	width:2.5vw;
+	border-radius:30%;
+	margin-right:.5vw;
+	vertical-align:middle;
+}
+#dateText{
+	margin-top:1vw;
+	margin-left:1.5vw;
+	font-size:1.5vw;
+	text-align:left;
+	color:white;
+}
+#dateHeader h1{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	font-size:3.5vw;
+}
+#systemSayingWrapper{
+	position:relative;
+	height:10vw;
+}
+#dateHeader h3{
+	position:absolute;
+	font-weight: normal;
+	font-size:3vw;
+	bottom:10%;
+	right:0;
+	left:0;
+	margin:0 auto;
+}

@@ -1,0 +1,70 @@
+/*Up Next Widget---------------------------------------*/
+#upNextContainer{
+	grid-column-start:upNext;
+	grid-row-start:calRow;
+	display:grid;
+	margin:0 1.5vw;
+	padding-top:.5vw;
+	height:50vw;
+	grid-template-columns:[col1] 1fr;
+	grid-template-rows:[row1] 16.6% [row2] 16.6% [row3] 16.6% [row4] 16.6% [row5] 16.6% [row6] 16.6%;
+	text-align:left;
+}
+/*positioning the grid of events*/
+#upNext1{
+	grid-column-start: col1;
+	grid-row-start:row1;
+}
+#upNext2{
+	grid-column-start: col1;
+	grid-row-start:row2;
+}
+#upNext3{
+	grid-column-start: col1;
+	grid-row-start:row3;
+}
+#upNext4{
+	grid-column-start: col1;
+	grid-row-start:row4;
+}
+#upNext5{
+	grid-column-start: col1;
+	grid-row-start:row5;
+}
+#upNext6{
+	grid-column-start: col1;
+	grid-row-start:row6;
+}
+
+.eventItem{
+	border-radius:1.3vw;
+	filter:drop-shadow(.1vw .1vw 8px rgba(0,0,0,.3));
+	position:relative;
+	margin:.35vw;
+}
+.eventLine{
+	width:.4vw;
+	height:100%;
+	background-color:black;
+	border-radius:2.7vw;
+	grid-column-start:vline;
+	margin-right:.5vw;
+}
+.eventTextContainer{
+	grid-column-start:event;
+}
+.eventTextContainer h3{
+	font-weight:bold;
+	font-size:2vw;
+}
+.eventTextContainer p{
+	font-weight:normal;
+	font-size:1.5vw;
+}
+.eventContainer{
+	display:grid;
+	grid-template-columns:[vline] 1fr [event] 20fr;
+	margin-left:1vw;
+	position:absolute;
+	top:23%;
+}
