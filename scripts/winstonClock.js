@@ -61,7 +61,7 @@ function amOrPm(hour){
 		am();
 }
 function readHour(hour, minute){
-	if (minute >= 35)
+	if (minute >= 33)
 		hour++;
 
 	if (hour>12)
