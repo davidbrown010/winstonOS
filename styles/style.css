@@ -13,6 +13,7 @@ header{
 	text-align:center;
 	font-size:2vw;
 	font-weight:bold;
+	padding-bottom:-4vw;
 }
 
 /*Lightmode/darkmode widgets------------------------------*/
@@ -40,13 +41,14 @@ h4{
 /*formatting the grid system-----------------------------*/
 .mainInterface{
 	margin:0 auto;
-	padding-top:4vw;
 	text-align:center;
 	width: 90vw;
-	background-color:red;
+	height:163vw;
+	position:relative;
 }
 
 .grid-container{
+	position:absolute;
 	width:90vw;
 	display:grid;
 	grid-template-columns:27.33vw 27.4vw 27.33vw;
@@ -59,7 +61,7 @@ h4{
 	grid-column-gap: 4vw;
 	grid-row-gap: 4vw;
 	margin:0 auto;
-	background-color: blue;
+	margin-top:5.5vw;
 }
 .grid-item{
 	border-radius:1.4vw;
