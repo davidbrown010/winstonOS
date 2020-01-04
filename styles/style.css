@@ -42,23 +42,26 @@ h4{
 	margin:0 auto;
 	padding-top:4vw;
 	text-align:center;
-	width: 82vw;
+	width: 90vw;
+	background-color:red;
 }
 
 .grid-container{
 	display:grid;
 	grid-template-columns: 33% 33% 33%;
-	grid-template-rows:30vw 30vw 30vw 30vw;
+	grid-template-rows:40vw 40vw 40vw 40vw;
 	grid-template-areas:
 	"currentWeather date upNext"
 	"forecast forecast tasks"
 	"music bible tasks"
 	"news news news";
+	grid-column-gap: 4vw;
+	grid-row-gap: 4vw;
 	margin:0 auto;
+	background-color: blue;
 }
 .grid-item{
 	border-radius:1.4vw;
-	margin:2vw;
 	background-color:rgb(150,150,150);
 	/*filter:drop-shadow(.5vw .5vw 8px rgba(0,0,0,.3));*/
 }
