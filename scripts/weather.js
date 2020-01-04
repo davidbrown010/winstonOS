@@ -320,7 +320,7 @@ function refreshWeather(){
 
 
 	console.log("weather updated");
-	setInterval(function(){refreshWeather();}, (24*60*60*1000)-(((hours*3600)+(minutes*60)+seconds)*1000));
+	setTimeout(function(){refreshWeather();}, (24*60*60*1000)-(((hours*3600)+(minutes*60)+seconds)*1000));
 }
 
 function capitalizeWord(word){
