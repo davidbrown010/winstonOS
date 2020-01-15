@@ -6,6 +6,7 @@ function refreshBible(){
 	var apiToken = "M5bdALTzNSIPmNuXMBdR8qMPOtA";
 	var time = new Date();
 	var day = (Date.now()/(3600*1000*24));
+	console.log(Date.now());
 	console.log(day);
 	fetch('https://developers.youversionapi.com/1.0/verse_of_the_day/' + day + '?version_id=206', {
 	    headers: {
