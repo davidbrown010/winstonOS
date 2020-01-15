@@ -4,7 +4,10 @@ refreshBible();
 
 function refreshBible(){
 	var apiToken = "M5bdALTzNSIPmNuXMBdR8qMPOtA";
-	fetch('https://developers.youversionapi.com/1.0/verse_of_the_day/1?version_id=206', {
+	var time = new Date();
+	var day = (time.now()/(3600*1000*24)).toFixed(0);
+	
+	fetch('https://developers.youversionapi.com/1.0/verse_of_the_day/' + day + '?version_id=206', {
 	    headers: {
 	        'X-YouVersion-Developer-Token': apiToken,
 	        'Accept-Language': 'en',
@@ -16,7 +19,6 @@ function refreshBible(){
 	console.log("bible updated");
 	//Check for new version ids
 	//getBibleVersions();
-	var time = new Date();
 	setTimeout(function(){refreshBible();},(24*60*60*1000)-(((time.getHours()*60*60)+(time.getMinutes()*60)+(time.getSeconds()))*1000));
 }
 
